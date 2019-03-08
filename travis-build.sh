@@ -9,6 +9,7 @@ wget -qO - 'http://archive.neon.kde.org/public.key' | apt-key add -
 
 ### Add NXOS Repository
 echo 'deb http://repo.nxos.org/development nxos main' | tee /etc/apt/sources.list.d/nxos-development.list
+wget -qO - 'http://repo.nxos.org/public.key' | apt-key add -
 
 ### Install Dependencies
 apt-get --yes update
